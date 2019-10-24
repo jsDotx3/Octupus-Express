@@ -1,6 +1,6 @@
 {
   "name": "octopus-express",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "lib/index.js",
   "description": "Extend response for used method according HTTP Status Code.",
   "husky": {
