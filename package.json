@@ -5,7 +5,7 @@
   "description": "Extend response for used method according HTTP Status Code.",
   "husky": {
     "hooks": {
-      "pre-comnpm mit": "lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -15,14 +15,20 @@
     ]
   },
   "repository": {
-    "url": ""
+    "type": "git",
+    "url": "git+https://github.com/jsDotx3/Octupus-Express.git"
   },
+  "bugs": {
+    "url": "https://github.com/jsDotx3/Octupus-Express/issues"
+  },
+  "homepage": "https://github.com/jsDotx3/Octupus-Express#readme",
   "scripts": {
     "lint": "./node_modules/.bin/eslint ./ --fix"
   },
   "keywords": [
     "express",
-    "http"
+    "http",
+    "middleware"
   ],
   "author": "Jose Nuñez A. <jos.nuneza@gmail.com>",
   "license": "ISC",
