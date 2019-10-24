@@ -1,5 +1,9 @@
 # Octupus Express Middleware
-* Develop by Jose Nuñez A. <jos.nuneza@gmail.com>
+
+   [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b9968baf198a4d1a9568d663fd24c560)](https://www.codacy.com/manual/jsDotx3/Octupus-Express?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jsDotx3/Octupus-Express&amp;utm_campaign=Badge_Grade)
+
+**Develop by Jose Nuñez A. <[jos.nuneza@gmail.com](malito:jos.nuneza@gmail.com)>**
+
 ![Octubupus](https://i.imgur.com/noVwE9b.png)
 
 ## API
