@@ -1,6 +1,6 @@
 {
   "name": "octopus-express",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/index.js",
   "author": "Jose Nuñez A. <jos.nuneza@gmail.com>",
   "license": "MIT",
@@ -13,12 +13,10 @@
     "url": "https://github.com/jsDotx3/Octupus-Express/issues"
   },
   "homepage": "https://github.com/jsDotx3/Octupus-Express#readme",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "express",
     "http",
     "middleware"
   ]
-
 }
