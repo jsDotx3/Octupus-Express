@@ -8,11 +8,11 @@
 
 ## API
 
-API is very simple , we load only **"HTTP_CODES"** of http (you can read [read](https://nodejs.org/api/http.html#http_http_status_codes) list of **HTTP_STATUS_CODE** ) and permitimos que el programador utilice su convergencia en una idea **"camelCase"** para el orden.
+API is very simple , we load only **"HTTP_CODES"** of http (you can read [read](https://nodejs.org/api/http.html#http_http_status_codes) list of **HTTP_STATUS_CODE** ) and allow the programmer to use the method with **"camelCase"** for your convergence
 
 ## Description
 
-Octupus Express has multiple utils for object **response** of Express, por example, previously you programmer this:
+Octupus Express has multiple utils for object **response** of Express, for example, previously you programmer this:
 ```
 res.status(400).json({error: 'Message')}.
 ```
@@ -22,14 +22,24 @@ res.badRequest('Message').
 ```
 
 
-## List Status Code:
+## Install
 
-Example: 
+Install module with **npm install octopus-express --save** , after in your app.js can added this middleware before all routes.
 
- - Código 200: **res.ok('message')**
- -  Código 400: **res.badRequest('message')**
+```
+const octopus = require('octopus-express');
+app.use(octopus());
+```
 
-| Codigo  | Mensaje |   Función  | 
+## Example Methods
+| HTTP Code  | Example  | 
+|--|--|--|
+200 | **res.ok('message')** |
+400 | **res.badRequest('message')** |
+401 | **res.unauthorized('message')** |
+
+## List Http Status Availables
+| HTTP Code  | Message |   Function  | 
 |--|--|--|
 |  100  |  Continue  |  continue  |
 |  101  |  Switching  Protocols  |  switchingProtocols  |

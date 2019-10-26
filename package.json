@@ -2,18 +2,9 @@
   "name": "octopus-express",
   "version": "0.1.4",
   "main": "lib/index.js",
+  "author": "Jose Nuñez A. <jos.nuneza@gmail.com>",
+  "license": "MIT",
   "description": "Extend response for used method according HTTP Status Code.",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "./node_modules/.bin/eslint ./ --fix",
-      "git add"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jsDotx3/Octupus-Express.git"
@@ -23,18 +14,11 @@
   },
   "homepage": "https://github.com/jsDotx3/Octupus-Express#readme",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ./ --fix"
   },
   "keywords": [
     "express",
     "http",
     "middleware"
-  ],
-  "author": "Jose Nuñez A. <jos.nuneza@gmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^6.5.1",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.2"
-  }
+  ]
+
 }
