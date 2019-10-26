@@ -26,7 +26,7 @@ res.badRequest('Message').
 
 Example: 
 
- - Código 200: **res,ok('message')**
+ - Código 200: **res.ok('message')**
  -  Código 400: **res.badRequest('message')**
 
 | Codigo  | Mensaje |   Función  | 
