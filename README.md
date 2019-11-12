@@ -1,38 +1,47 @@
-# Octupus Express Middleware
+# Welcome to octopus-express 👋
+[![Version](https://img.shields.io/npm/v/octopus-express.svg)](https://www.npmjs.com/package/octopus-express)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/jsDotx3/Octupus-Express#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jsDotx3/Octupus-Express/graphs/commit-activity)
+[![Twitter: jsdotx3](https://img.shields.io/twitter/follow/jsdotx3.svg?style=social)](https://twitter.com/jsdotx3)
 
-   [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b9968baf198a4d1a9568d663fd24c560)](https://www.codacy.com/manual/jsDotx3/Octupus-Express?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jsDotx3/Octupus-Express&amp;utm_campaign=Badge_Grade)
+> Extend response for used method according HTTP Status Code.
 
-**Develop by Jose Nuñez A. <[jos.nuneza@gmail.com](malito:jos.nuneza@gmail.com)>**
+### 🏠 [Homepage](https://github.com/jsDotx3/Octupus-Express#readme)
 
-![Octubupus](https://i.imgur.com/noVwE9b.png)
+## Install
 
-## API
-
-API is very simple , we load only **"HTTP_CODES"** of http (you can read [read](https://nodejs.org/api/http.html#http_http_status_codes) list of **HTTP_STATUS_CODE** ) and permitimos que el programador utilice su convergencia en una idea **"camelCase"** para el orden.
-
-## Description
-
-Octupus Express has multiple utils for object **response** of Express, por example, previously you programmer this:
+```sh
+npm install octopus-express --save
 ```
-res.status(400).json({error: 'Message')}.
+
+## Usage
+
+After install, in your app.js can added this middleware before all routes.
+
+```
+const octopus = require('octopus-express');
+app.use(octopus());
+```
+
+Octupus Express has multiple utils for object **response** of Express, for example, previously you programmer this:
+```
+res.status(400).json({error: 'Message')}
 ```
 Now, with **Octupus Express**, your code is beatiful and simple.
 ```
-res.badRequest('Message').
+res.badRequest('Message');
 ```
 
+## Example Methods
+- **200:** res.ok('message')
+- **400:** res.badRequest('message')
+- **401:** res.unauthorized('message')
 
-## List Status Code:
-
-Example: 
-
- - Código 200: **res.ok('message')**
- -  Código 400: **res.badRequest('message')**
-
-| Codigo  | Mensaje |   Función  | 
-|--|--|--|
-|  100  |  Continue  |  continue  |
-|  101  |  Switching  Protocols  |  switchingProtocols  |
+## List Http Status Availables
+| HTTP Status | Method | Function |
+|:---------:|:------:|:--------:|
+|  100      |  Continue  |  continue  |
+|  101      |  Switching  Protocols  |  switchingProtocols  |
 |  102  |  Processing  |  processing  |
 |  103  |  Early  Hints  |  earlyHints  |
 |  200  |  OK  |  ok  |
@@ -94,3 +103,29 @@ Example:
 |  509  |  Bandwidth  Limit  Exceeded  |  bandwidthLimitExceeded  |
 |  510  |  Not  Extended  |  notExtended  |
 |  511  |  Network  Authentication  Required  |  networkAuthenticationRequired  |
+
+
+## Author
+
+👤 **Jose Nuñez A. <jos.nuneza@gmail.com>**
+
+* Website: https://twitter.com/jsDotx3
+* Twitter: [@jsdotx3](https://twitter.com/jsdotx3)
+* Github: [@jsDotx3](https://github.com/jsDotx3)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/jsDotx3/Octupus-Express/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+
+## 📝 License
+
+Copyright © 2019 [Jose Nuñez A. <jos.nuneza@gmail.com>](https://github.com/jsDotx3).
+
+This project is [MIT](https://github.com/jsDotx3/Octupus-Express/blob/master/LICENSE) licensed.
