@@ -1,8 +1,8 @@
 {
   "name": "octopus-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
-  "author": "Jose Nuñez A. <jos.nuneza@gmail.com>",
+  "author": "jsDotx3",
   "license": "MIT",
   "description": "Extend response for used method according HTTP Status Code.",
   "repository": {
